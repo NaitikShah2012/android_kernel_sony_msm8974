@@ -1572,6 +1572,7 @@
 		reg = <0 4>;
 		compatible = "qcom,msm-cpufreq";
 		qcom,cpufreq-table =
+			<  268800  300000  572 >,
 			<  300000  300000  572 >,
 			<  422400  422400 1144 >,
 			<  652800  499200 1525 >,
@@ -1589,7 +1590,11 @@
 			< 2419200 1728000 7102 /* 931 MHz */ >,
 			< 2572800 1728000 7102 /* 931 MHz */ >,
 			< 2726400 1728000 7102 /* 931 MHz */ >,
+<<<<<<< HEAD
 			< 2880000 1728000 7102 /* 931 MHz */ >;
+=======
+			< 2803200 1728000 7102 /* 931 MHz */ >;
+>>>>>>> 25dffec7d343cd9dcaa6cc4e3eb77a79db272e68
 	};
 
 	usb3: qcom,ssusb@f9200000 {
@@ -2075,8 +2080,8 @@
 		compatible = "qcom,msm-watchdog";
 		reg = <0xf9017000 0x1000>;
 		interrupts = <0 3 0>, <0 4 0>;
-		qcom,bark-time = <11000>;
-		qcom,pet-time = <10000>;
+		qcom,bark-time = <21000>;
+		qcom,pet-time = <20000>;
 		qcom,ipi-ping;
 	};
 
